@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+
+    <h1>Login</h1>
+
+    <a href="/register">Do not have an account?</a>
+    <br /> <br />
+    
+    <form action="/login" method="post">
+        Name
+        <input type="text" name="name">
+        Password
+        <input type="password" name="password">
+        <input type="submit" value="Login">
+    </form>
+
+    {{#if msg}}
+        <p style="color: red">{{msg}}</p>
+    {{/ if}}
+
+</body>
+</html>
